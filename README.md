@@ -27,7 +27,7 @@ pip install -r requirements.txt
 2. Ejecutar la aplicación FastAPI:
 
 ```bash
-uvicorn fastapi_app:app --reload
+uvicorn app.main:app --reload
 ```
 Esto iniciará el servidor en http://127.0.0.1:8000.
 
@@ -41,9 +41,9 @@ Esto iniciará el servidor en http://127.0.0.1:8000.
 - GET /generate_summary_cached: Genera un resumen a partir de una pregunta y dataframe.
 
 4. Configuración de la base de datos:
-Asegúrate de configurar correctamente los parámetros de conexión a la base de datos en la función create_connection.
+Asegúrate de configurar correctamente los parámetros de conexión a la base de datos y Vanna en el archivo .env
 
 ## Notas
 
-- Reemplaza 'Vanna API Key' y 'Vanna Model' en la función setup_vanna con tus valores reales.
+- Reemplaza 'Vanna API Key' y 'Vanna Model' en el archivo .env con tus valores reales.
 - Asegúrate de que la base de datos PostgreSQL esté en funcionamiento y accesible con las credenciales proporcionadas.
